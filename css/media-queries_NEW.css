@@ -1,0 +1,197 @@
+body{
+	margin:0;
+	/*background-image:url("../assets/images/bg.jpg");*/
+	background-position:fixed;
+}
+
+#main{
+	/*top:-8px;*/
+	position:relative;
+	max-width:960px;
+	margin:auto;
+/*	background:gray;*/
+}
+
+header{
+	padding:0 2%;
+	margin-top:25px;
+	margin-bottom:-25px;
+
+}
+
+#txtLogo{
+	float:right;
+	margin-top:23px;
+	width:216px;
+	height:35px;
+}
+
+nav{
+	/*margin:10px auto 10px auto;*/
+	position:relative;
+	top:-34px;
+	right:0;
+}
+
+nav ul {
+	list-style:none;
+	text-align:right;
+}
+
+nav li {
+	display:inline-block;
+	padding:0 0 0 25px;
+}
+nav li a{
+	font-size:14px;
+	text-decoration:none;
+	font-family:Verdana, sans-serif;
+	color:#aaa;
+}
+
+article a{
+	font-size:14px;
+	text-decoration:none;
+	font-family:Verdana, sans-serif;
+	color:#009ad4;	
+}
+
+nav li a:hover{
+	color:#ec008c;
+}
+
+article a:hover{
+	color:#ec008c;
+}
+
+article a img{
+
+}
+
+#gallery img{
+	vertical-align:top;
+	width:100%;
+	height:auto;
+}
+
+.content{
+	width:98%;
+	height:auto;
+/*	background-color:red;*/
+	margin:auto auto 20px auto;
+	display:inline-block;
+	padding:0 2% 0 2%;
+}
+
+.thumb{
+	width:23%;
+	height:auto;
+	background-color:#ec008c;
+	float:left;
+	display:inline;
+	margin:0 2% 2% 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	overflow:hidden;
+}
+
+h4{
+	font-family:Verdana, sans-serif;
+	color:#ec008c;
+	margin:0 0 5px 0;
+	font-weight: normal;
+}
+
+article{
+	/*width:96%;
+	border-top:solid 1px #aaa;*/
+	width:98%;
+	padding-top:2%;
+	/*float:left;
+	background-color:#ec008c;
+	margin:0 0 10px 0;
+	padding:1%;*/
+}
+
+/*#bio, #current{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 46%;
+	float: left;
+	margin-right: 2%;
+}
+
+#bio{
+	background-color:#2e152d;	
+}*/
+
+#current{
+	background-color:#ec008c;	
+}
+
+
+article p{
+	font-family:Verdana, sans-serif;
+	/*margin:1%;*/
+	color:#aaa;
+	font-size:14px;
+}
+
+@media screen and (max-width:600px){
+	header{
+		margin-bottom:-75px;
+		/*width:100%;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;*/
+	}
+
+	nav{
+		margin:0 0 -40px;
+		position:relative;
+		top:-34px;
+		right:0;
+		float:right;
+	}
+
+	nav ul {
+		list-style:none;
+		text-align:left;
+	}
+
+	.content{
+		width:98.2%;
+		margin:1% 1% 20px 1%;
+		padding:0%;
+	}
+
+	.thumb{
+		width:48%;
+		margin:1%;
+	}
+
+	article a img{
+		padding-left:3%;
+	}
+
+	h4{
+		margin-left:2%;
+		margin-bottom:0;
+	}
+	
+	article{
+		margin:1% 1% 5px 1%;
+	}
+
+	article p{
+		margin:2%;
+	}
+
+	#bio, #current{
+	width: 96%;
+	float: left;
+	margin-right: 0;
+}
+}
