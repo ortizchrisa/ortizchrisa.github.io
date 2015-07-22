@@ -79,7 +79,7 @@ article a img{
 	height:auto;
 /*	background-color:red;*/
 	margin:auto auto 20px auto;
-	display:inline-block;
+	display:block;
 	padding:0 2% 0 2%;
 }
 
