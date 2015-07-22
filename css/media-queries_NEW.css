@@ -141,7 +141,8 @@ article p{
 
 @media screen and (max-width:600px){
 	header{
-		margin-bottom:-75px;
+		/*margin-bottom:-75px;*/
+		margin-bottom:0px;
 		/*width:100%;
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;
