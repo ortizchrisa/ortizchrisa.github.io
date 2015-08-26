@@ -1,3 +1,6 @@
+html, body { 
+	height: 100%;
+}
 body{
 	margin:0;
 	/*background-image:url("../assets/images/bg.jpg");*/
@@ -79,7 +82,7 @@ article a img{
 	height:auto;
 /*	background-color:red;*/
 	margin:auto auto 20px auto;
-	display:inline-block;
+	display:block;
 	padding:0 2% 0 2%;
 }
 
@@ -101,6 +104,17 @@ h4{
 	color:#ec008c;
 	margin:0 0 5px 0;
 	font-weight: normal;
+}
+
+/*	Centering the 'Other Media' logos	*/
+#otherMedia {
+	width: 100%;
+	text-align: center;
+}
+#otherMedia > div {
+	display: inline-block;
+	width: 160px;
+	margin: 10px;
 }
 
 article{
@@ -141,8 +155,9 @@ article p{
 
 @media screen and (max-width:600px){
 	header{
-		margin-bottom:-75px;
-		/*width:100%;
+		margin-bottom:0px;
+		/*margin-bottom:-75px;
+		width:100%;
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;
 		border-radius: 0;*/
@@ -190,8 +205,14 @@ article p{
 	}
 
 	#bio, #current{
-	width: 96%;
-	float: left;
-	margin-right: 0;
-}
+		width: 96%;
+		float: left;
+		margin-right: 0;
+	}
+	
+	#otherMedia { text-align: left; }
+	#otherMedia > div {
+		margin-left: 0px;
+		display: block;
+	}
 }
