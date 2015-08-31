@@ -49,7 +49,8 @@ function init(){
 
 	var href = document.location.href;
 	var pageName = href.substr(href.lastIndexOf('/') + 1);
-
+	console.log("PageName= <<" + pageName + ">>");
+	
 	if(pageName == 'index.html') {
 		$(".popup").magnificPopup({
 			type:"image",
