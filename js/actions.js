@@ -35,7 +35,7 @@
 
 function init(){
 	console.log("actions.js loaded");
-
+console.log('GitHub success!! -Sal');
 	//	Hover effect
 	$('#gallery>div>a').each( function(){
 		this.addEventListener("mouseover", thumbMouseOver, false);
@@ -84,11 +84,11 @@ function init(){
 				markupParse: function(template, values, item) {
 					values.title = item.el.attr('data-title');
 				},
-				change: function(){
+			/*	change: function(){
 					//	Autoplay!
 					$(this.content).find('video').get(0).currentTime = 0;
 					$(this.content).find('video').get(0).play();
-				}
+				}*/
   			}
 		});
 
