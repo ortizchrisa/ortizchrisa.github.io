@@ -86,9 +86,8 @@ function init(){
 				},
 				change: function(){
 					//	Autoplay!
-					console.log($(this.content).find('video').get(0));
-					$(this.content).find('video').get(0).currentTime = 0;
-				//	$(this.content).find('video').get(0).play();
+				//	$(this.content).find('video').get(0).currentTime = 0;
+					$(this.content).find('video').get(0).play();
 				}
   			}
 		});
