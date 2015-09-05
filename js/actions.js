@@ -32,9 +32,19 @@
 	});
 });*/
 
+$(document).ready(function(){
+	//	Prevent clicking on thumbs until loaded
+	$('.thumbImg').parent().click( false );
+});
+
 
 function init(){
 	console.log("actions.js loaded");
+
+	//	Assign class for Magnific to target
+	$('.thumbImg').parent().addClass("popup")
+	//	Reactivate thumb links
+	$('.thumbImg').parent().off().click( function(){ return true; }); );
 
 	//	Hover effect
 	$('#gallery>div>a').each( function(){
@@ -43,9 +53,6 @@ function init(){
 	$('#gallery>div>a').each( function(){
 		this.addEventListener("mouseout", thumbMouseOut, false);
 	});
-
-	//	Assign class for Magnific to target
-	$('.thumbImg').parent().addClass("popup");
 
 	var href = document.location.href;
 	var pageName = href.substr(href.lastIndexOf('/') + 1);
