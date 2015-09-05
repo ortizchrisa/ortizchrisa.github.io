@@ -44,7 +44,7 @@ function init(){
 	//	Assign class for Magnific to target
 	$('.thumbImg').parent().addClass("popup")
 	//	Reactivate thumb links
-	$('.thumbImg').parent().off().click( function(){ return true; }); );
+	$('.thumbImg').parent().off().click( function(){ return true; });
 
 	//	Hover effect
 	$('#gallery>div>a').each( function(){
