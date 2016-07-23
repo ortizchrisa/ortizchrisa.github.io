@@ -70,6 +70,19 @@ function init(){
 			image:{titleSrc:'data-title'}
 		});
 	}
+	else if(pageName == 'comics.html' || pageName == '') {
+		$(".popup").magnificPopup({
+			type:"image",
+			verticalFit: true,
+			removalDelay: 150,
+			mainClass: "mfp-fade",
+			gallery:{
+				enabled:true,
+				tCounter: "<span class='mfp-counter'>%curr% of %total%</span>"
+			},
+			image:{titleSrc:'data-title'}
+		});
+	}
 	else if(pageName == 'dev_design.html') {
 		$(".video-popup").append(
 			"<div class='mfp-bottom-bar'>"+
