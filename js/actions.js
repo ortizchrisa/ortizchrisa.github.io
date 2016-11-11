@@ -70,7 +70,7 @@ function init(){
 			image:{titleSrc:'data-title'}
 		});
 	}
-	else if(pageName == 'comics.html' || pageName == '') {
+	else if(pageName == 'funstuff.html' || pageName == '') {
 		$(".popup").magnificPopup({
 			type:"image",
 			verticalFit: true,
@@ -83,7 +83,7 @@ function init(){
 			image:{titleSrc:'data-title'}
 		});
 	}
-	else if(pageName == 'dev_design.html') {
+	else if(pageName == 'animation.html') {
 		$(".video-popup").append(
 			"<div class='mfp-bottom-bar'>"+
 				"<div class='mfp-title'></div>"+
